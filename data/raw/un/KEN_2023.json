@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "8AG3oj",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 99,
+      "coo_name": "Kenya",
+      "coo": "KEN",
+      "coo_iso": "KEN",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 8004,
+      "asylum_seekers": 15941,
+      "returned_refugees": "0",
+      "idps": "0",
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 10,
+      "oip": "-",
+      "hst": 401356
+    }
+  ]
+}

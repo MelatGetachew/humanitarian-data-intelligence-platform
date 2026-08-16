@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "W67rcG",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 58,
+      "coo_name": "Ethiopia",
+      "coo": "ETH",
+      "coo_iso": "ETH",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 158344,
+      "asylum_seekers": 139424,
+      "returned_refugees": 6187,
+      "idps": 2561497,
+      "returned_idps": 534293,
+      "stateless": "0",
+      "ooc": 4791,
+      "oip": "-",
+      "hst": 1115201
+    }
+  ]
+}
