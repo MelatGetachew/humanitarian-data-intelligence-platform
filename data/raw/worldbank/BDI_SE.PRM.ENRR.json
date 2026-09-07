@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 1000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-07-13"
+  },
+  [
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2025",
+      "value": 100.627548217773,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2020",
+      "value": 101.661087301601,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2019",
+      "value": 101.506122486696,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2018",
+      "value": 104.256445289133,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2017",
+      "value": 107.55418011941,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2016",
+      "value": 112.482124155559,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2015",
+      "value": 116.228128078144,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2014",
+      "value": 121.424109579602,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2013",
+      "value": 126.110240344608,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2012",
+      "value": 131.357142093473,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2011",
+      "value": 135.992222159155,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2010",
+      "value": 135.159734772168,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2009",
+      "value": 131.400833129883,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2008",
+      "value": 123.768852233887,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2007",
+      "value": 120.352416992188,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2006",
+      "value": 107.597122192383,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2005",
+      "value": 84.5035934448242,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2004",
+      "value": 79.2554397583008,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2003",
+      "value": 74.1769638061523,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2002",
+      "value": 68.6379928588867,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2001",
+      "value": 61.9382514953613,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2000",
+      "value": 59.2368316650391,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1999",
+      "value": 57.2445907592773,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1998",
+      "value": 48.1120796203613,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1997",
+      "value": 39.9262313842773,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1996",
+      "value": 37.9824905395508,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1995",
+      "value": 47.974048614502,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1994",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1993",
+      "value": 61.1928100585938,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1992",
+      "value": 61.2891883850098,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1991",
+      "value": 63.7648010253906,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1990",
+      "value": 62.5858917236328,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1989",
+      "value": 62.2563705444336,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1988",
+      "value": 61.1612205505371,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1987",
+      "value": 54.0130386352539,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1986",
+      "value": 47.9880790710449,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1985",
+      "value": 43.895881652832,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1984",
+      "value": 39.5757598876953,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1983",
+      "value": 34.8564987182617,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1982",
+      "value": 28.4392395019531,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1981",
+      "value": 24.6633701324463,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1980",
+      "value": 22.8950290679932,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1979",
+      "value": 21.4108791351318,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1978",
+      "value": 21.4320201873779,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1977",
+      "value": 20.3434906005859,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1976",
+      "value": 20.6418209075928,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1975",
+      "value": 21.1686401367188,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1974",
+      "value": 21.3160305023193,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1973",
+      "value": 23.574239730835,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1972",
+      "value": 26.9655704498291,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1971",
+      "value": 27.9025402069092,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1970",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1969",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1968",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1967",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1966",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1965",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1964",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1963",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1962",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1961",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SE.PRM.ENRR",
+        "value": "School enrollment, primary (% gross)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+]

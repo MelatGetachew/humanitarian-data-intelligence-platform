@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "I0wE5b",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 172,
+      "coo_name": "Somalia",
+      "coo": "SOM",
+      "coo_iso": "SOM",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 842044,
+      "asylum_seekers": 179224,
+      "returned_refugees": 1876,
+      "idps": 3860099,
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 64332,
+      "oip": "-",
+      "hst": "0"
+    }
+  ]
+}

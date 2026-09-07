@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "48hmTe",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 161,
+      "coo_name": "Rwanda",
+      "coo": "RWA",
+      "coo_iso": "RWA",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 249955,
+      "asylum_seekers": 18297,
+      "returned_refugees": 1961,
+      "idps": "0",
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 12356,
+      "oip": "-",
+      "hst": 12139
+    }
+  ]
+}

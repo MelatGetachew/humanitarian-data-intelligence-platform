@@ -1,3 +1,8 @@
 country_code,country,year,refugees,asylum_seekers,idps,returned_refugees,returned_idps
+BDI,Burundi,2023,319857,61035,8177,26663,0
 ETH,Ethiopia,2023,158344,139424,2561497,6187,534293
 KEN,Kenya,2023,8004,15941,0,0,0
+RWA,Rwanda,2023,249955,18297,0,1961,0
+SOM,Somalia,2023,842044,179224,3860099,1876,0
+SSD,South Sudan,2023,2292482,24596,1236672,527206,0
+UGA,Uganda,2023,8376,14989,0,0,0

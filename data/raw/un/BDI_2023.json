@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "odmBH3",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 16,
+      "coo_name": "Burundi",
+      "coo": "BDI",
+      "coo_iso": "BDI",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 319857,
+      "asylum_seekers": 61035,
+      "returned_refugees": 26663,
+      "idps": 8177,
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 6226,
+      "oip": "-",
+      "hst": "0"
+    }
+  ]
+}

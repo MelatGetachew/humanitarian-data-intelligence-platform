@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "rn8ER3",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 179,
+      "coo_name": "South Sudan",
+      "coo": "SSD",
+      "coo_iso": "SSD",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 2292482,
+      "asylum_seekers": 24596,
+      "returned_refugees": 527206,
+      "idps": 1236672,
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 66,
+      "oip": "-",
+      "hst": 454831
+    }
+  ]
+}

@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 1000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-07-13"
+  },
+  [
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2025",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2024",
+      "value": 63.818,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2023",
+      "value": 63.651,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2022",
+      "value": 62.882,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2021",
+      "value": 62.101,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2020",
+      "value": 62.569,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2019",
+      "value": 62.18,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2018",
+      "value": 61.806,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2017",
+      "value": 61.345,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2016",
+      "value": 60.789,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2015",
+      "value": 60.107,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2014",
+      "value": 59.764,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2013",
+      "value": 59.179,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2012",
+      "value": 58.501,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2011",
+      "value": 57.804,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2010",
+      "value": 57.088,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2009",
+      "value": 56.422,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2008",
+      "value": 55.581,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2007",
+      "value": 54.832,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2006",
+      "value": 53.962,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2005",
+      "value": 53.053,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2004",
+      "value": 52.217,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2003",
+      "value": 50.997,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2002",
+      "value": 49.924,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2001",
+      "value": 48.509,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "2000",
+      "value": 47.617,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1999",
+      "value": 47.627,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1998",
+      "value": 46.678,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1997",
+      "value": 45.721,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1996",
+      "value": 44.807,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1995",
+      "value": 44.589,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1994",
+      "value": 44.515,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1993",
+      "value": 37.221,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1992",
+      "value": 44.469,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1991",
+      "value": 44.66,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1990",
+      "value": 45.184,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1989",
+      "value": 45.745,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1988",
+      "value": 42.889,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1987",
+      "value": 47.066,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1986",
+      "value": 47.402,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1985",
+      "value": 47.662,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1984",
+      "value": 47.687,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1983",
+      "value": 47.433,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1982",
+      "value": 47.012,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1981",
+      "value": 46.412,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1980",
+      "value": 45.731,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1979",
+      "value": 45.038,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1978",
+      "value": 44.404,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1977",
+      "value": 43.97,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1976",
+      "value": 43.691,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1975",
+      "value": 43.445,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1974",
+      "value": 43.337,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1973",
+      "value": 37.409,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1972",
+      "value": 25.777,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1971",
+      "value": 43.172,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1970",
+      "value": 43.225,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1969",
+      "value": 43,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1968",
+      "value": 43.405,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1967",
+      "value": 43.332,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1966",
+      "value": 43.529,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1965",
+      "value": 41.844,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1964",
+      "value": 43.601,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1963",
+      "value": 43.559,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1962",
+      "value": 43.492,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1961",
+      "value": 43.364,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "SP.DYN.LE00.IN",
+        "value": "Life expectancy at birth, total (years)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "countryiso3code": "BDI",
+      "date": "1960",
+      "value": 43.262,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+]

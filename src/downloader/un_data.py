@@ -34,7 +34,7 @@ def save_raw_data(data, country_code, year):
     print(f"Saved to {filename}")
 
 if __name__ == "__main__":
-    countries = ["ETH", "KEN", "NGA"]
+    countries = ["ETH", "KEN", "UGA", "TZA", "SOM", "SSD", "RWA", "BDI", "DJI", "ERI"]
     years = [2023]
 
     for country in countries:

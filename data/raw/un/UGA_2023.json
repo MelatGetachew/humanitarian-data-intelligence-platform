@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "short-url": "ees7VS",
+  "maxPages": 1,
+  "total": [],
+  "items": [
+    {
+      "year": 2023,
+      "coo_id": 199,
+      "coo_name": "Uganda",
+      "coo": "UGA",
+      "coo_iso": "UGA",
+      "coa_id": "-",
+      "coa_name": "-",
+      "coa": "-",
+      "coa_iso": "-",
+      "refugees": 8376,
+      "asylum_seekers": 14989,
+      "returned_refugees": "0",
+      "idps": "0",
+      "returned_idps": "0",
+      "stateless": "0",
+      "ooc": 5,
+      "oip": "-",
+      "hst": 2659400
+    }
+  ]
+}

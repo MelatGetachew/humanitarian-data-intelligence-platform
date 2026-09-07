@@ -30,7 +30,7 @@ def save_raw_data(data, country_code, indicator_code):
     print(f"Saved to {filename}")
 
 if __name__ == "__main__":
-    countries = ["ETH", "KEN", "NGA"]
+    countries = ["ETH", "KEN", "UGA", "TZA", "SOM", "SSD", "RWA", "BDI", "DJI", "ERI"]
     indicators = [
         "SP.POP.TOTL",      # Population, total
         "SP.DYN.LE00.IN",   # Life expectancy at birth
@@ -45,4 +45,4 @@ if __name__ == "__main__":
                 save_raw_data(result, country, indicator)
             else:
                 print(f"Skipped {country} - {indicator} (failed after retries)")
-            time.sleep(1) 
+            time.sleep(1)
