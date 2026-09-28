@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>East Africa Humanitarian Data</h1>
+<p>Select a country to view its profile:</p>
+<ul>
+    {% for code, name in countries.items() %}
+    <li><a href="/country/{{ code }}">{{ name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
