@@ -1,6 +1,6 @@
-from flask import Blueprint, render_template, abort
+from flask import Blueprint, render_template, abort, request
 import plotly.express as px
-from app.db import get_country_data, COUNTRY_NAMES
+from app.db import get_country_data, get_overview, COUNTRY_NAMES
 
 main = Blueprint("main", __name__)
 
@@ -47,3 +47,24 @@ def country(code):
         stats=stats,
         charts=charts,
     )
+
+@main.route("/countries")
+def countries():
+    q = request.args.get("q", "").strip().lower()
+    sort = request.args.get("sort", "name")
+
+    allowed = {"name", "population", "life_expectancy", "school_enrollment", "displaced"}
+    if sort not in allowed:
+        sort = "name"
+
+    rows = get_overview()
+
+    if q:
+        rows = [r for r in rows if q in r["name"].lower() or q in r["code"].lower()]
+
+    with_data = [r for r in rows if r[sort] is not None]
+    without_data = [r for r in rows if r[sort] is None]
+    with_data.sort(key=lambda r: r[sort], reverse=(sort != "name"))
+    rows = with_data + without_data
+
+    return render_template("countries.html", rows=rows, q=q, sort=sort)

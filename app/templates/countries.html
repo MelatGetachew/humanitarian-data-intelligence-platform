@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Countries | Humanitarian Data Platform{% endblock %}
+
+{% block content %}
+<h1>Countries</h1>
+
+<form method="get" action="/countries" style="margin-bottom: 20px;">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by name or code">
+    <select name="sort">
+        <option value="name" {{ "selected" if sort == "name" }}>Sort: Name</option>
+        <option value="population" {{ "selected" if sort == "population" }}>Sort: Population</option>
+        <option value="life_expectancy" {{ "selected" if sort == "life_expectancy" }}>Sort: Life expectancy</option>
+        <option value="school_enrollment" {{ "selected" if sort == "school_enrollment" }}>Sort: School enrollment</option>
+        <option value="displaced" {{ "selected" if sort == "displaced" }}>Sort: Displaced people</option>
+    </select>
+    <button type="submit">Apply</button>
+</form>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <tr style="text-align: left; border-bottom: 2px solid #ddd;">
+        <th>Country</th>
+        <th>Population</th>
+        <th>Life expectancy</th>
+        <th>School enrollment</th>
+        <th>Displaced (2023)</th>
+    </tr>
+    {% for r in rows %}
+    <tr style="border-bottom: 1px solid #eee;">
+        <td><a href="/country/{{ r.code }}">{{ r.name }}</a></td>
+        <td>{{ "{:,.0f}".format(r.population) if r.population is not none else "No data" }}</td>
+        <td>{{ "{:.1f} yrs".format(r.life_expectancy) if r.life_expectancy is not none else "No data" }}</td>
+        <td>{{ "{:.1f}%".format(r.school_enrollment) if r.school_enrollment is not none else "No data" }}</td>
+        <td>{{ "{:,.0f}".format(r.displaced) if r.displaced is not none else "No data" }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">No countries match your search.</td></tr>
+    {% endfor %}
+</table>
+{% endblock %}
