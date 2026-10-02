@@ -1,12 +1,56 @@
 from flask import Blueprint, render_template, abort, request
 import plotly.express as px
-from app.db import get_country_data, get_overview, COUNTRY_NAMES
+import plotly.graph_objects as go
+from app.db import get_country_data, get_overview, get_map_data, COUNTRY_NAMES, COUNTRY_INFO
 
 main = Blueprint("main", __name__)
 
+
 @main.route("/")
 def home():
-    return render_template("home.html", countries=COUNTRY_NAMES)
+    rows = get_map_data()
+
+    codes = [r["code"] for r in rows]
+    pops = [r["population"] for r in rows]
+
+    hover_text = []
+    for r in rows:
+        pop = f"{r['population']:,.0f}" if r["population"] is not None else "No data"
+        life = f"{r['life_expectancy']:.1f} yrs" if r["life_expectancy"] is not None else "No data"
+        disp = f"{r['displaced']:,.0f}" if r["displaced"] is not None else "No data"
+        hover_text.append(
+            f"<b>{r['name']}</b><br>Population: {pop}<br>Life expectancy: {life}<br>Displaced: {disp}"
+        )
+
+    fig = go.Figure(go.Choropleth(
+        locations=codes,
+        z=pops,
+        locationmode="ISO-3",
+        text=hover_text,
+        hovertemplate="%{text}<extra></extra>",
+        customdata=codes,
+        colorscale="Teal",
+        marker_line_color="white",
+        colorbar_title="Population",
+    ))
+    fig.update_geos(
+        scope="africa",
+        fitbounds="locations",
+        visible=False,
+    )
+    fig.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        height=420,
+    )
+
+    map_html = fig.to_html(
+        full_html=False,
+        include_plotlyjs="cdn",
+        div_id="east-africa-map",
+    )
+
+    return render_template("home.html", countries=COUNTRY_INFO, rows=rows, map_html=map_html)
+
 
 @main.route("/country/<code>")
 def country(code):
@@ -36,17 +80,28 @@ def country(code):
     ]
     for i, (column, title) in enumerate(chart_specs):
         data = df.dropna(subset=[column])
-        fig = px.line(data, x="year", y=column, title=title)
-        # Load the Plotly JavaScript once, on the first chart only
+        fig = px.line(data, x="year", y=column, title=title, markers=True)
+        fig.update_traces(line_color="#1c5d7a", line_width=3, marker_size=6, marker_color="#0d1b2a")
+        fig.update_layout(
+            title_font_size=16,
+            title_font_color="#1a2332",
+            font_family="Inter, Arial, sans-serif",
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=40, r=20, t=50, b=40),
+            xaxis=dict(showgrid=False, title=None),
+            yaxis=dict(showgrid=True, gridcolor="#eef0f2", title=None),
+        )
         charts.append(fig.to_html(full_html=False, include_plotlyjs="cdn" if i == 0 else False))
-
     return render_template(
         "country.html",
         code=code,
         name=COUNTRY_NAMES[code],
+        info=COUNTRY_INFO[code],
         stats=stats,
         charts=charts,
     )
+
 
 @main.route("/countries")
 def countries():

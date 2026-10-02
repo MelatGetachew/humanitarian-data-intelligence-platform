@@ -1,11 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>East Africa Humanitarian Data</h1>
-<p>Select a country to view its profile:</p>
-<ul>
-    {% for code, name in countries.items() %}
-    <li><a href="/country/{{ code }}">{{ name }}</a></li>
+<div class="hero">
+    <h1>East Africa Humanitarian Data</h1>
+    <p>Live population, health, education, and displacement data for 10 countries across the region.</p>
+</div>
+
+<div class="map-section">
+    <div class="map-frame">
+        {{ map_html | safe }}
+    </div>
+</div>
+
+<h2 class="section-title">Browse by country</h2>
+<div class="card-grid">
+    {% for r in rows %}
+    <a class="country-card" href="/country/{{ r.code }}">
+        <div class="top-row">
+            <img src="https://flagcdn.com/w80/{{ r.info.iso2 }}.png" alt="{{ r.name }} flag">
+            <span class="name">{{ r.name }}</span>
+        </div>
+        <div class="mini-stat">Population: <strong>{{ "{:,.0f}".format(r.population) if r.population is not none else "No data" }}</strong></div>
+        <div class="mini-stat">Life expectancy: <strong>{{ "{:.1f} yrs".format(r.life_expectancy) if r.life_expectancy is not none else "No data" }}</strong></div>
+    </a>
     {% endfor %}
-</ul>
+</div>
+
+<script>
+    document.getElementById("east-africa-map").on("plotly_click", function(data) {
+        var code = data.points[0].customdata;
+        if (code) {
+            window.location.href = "/country/" + code;
+        }
+    });
+</script>
 {% endblock %}

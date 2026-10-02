@@ -1,26 +1,47 @@
 {% extends "base.html" %}
 
-{% block title %}{{ name }} | Humanitarian Data Platform{% endblock %}
+{% block title %}{{ name }} | East Africa Humanitarian Data{% endblock %}
 
 {% block content %}
-<h1>{{ name }}</h1>
-
-<div class="stats">
-    <div class="stat">Population
-        <strong>{{ "{:,.0f}".format(stats.population) if stats.population is not none else "No data" }}</strong>
-    </div>
-    <div class="stat">Life expectancy
-        <strong>{{ "{:.1f} yrs".format(stats.life_expectancy) if stats.life_expectancy is not none else "No data" }}</strong>
-    </div>
-    <div class="stat">IDPs (2023)
-        <strong>{{ "{:,.0f}".format(stats.idps) if stats.idps is not none else "No data" }}</strong>
-    </div>
-    <div class="stat">Refugees (2023)
-        <strong>{{ "{:,.0f}".format(stats.refugees) if stats.refugees is not none else "No data" }}</strong>
+<div class="country-hero">
+    <div class="country-hero-inner">
+        <div class="title-row">
+            <img class="flag-badge" src="https://flagcdn.com/w40/{{ info.iso2 }}.png" alt="{{ name }} flag">
+            <h1>{{ name }}</h1>
+        </div>
+        <p class="blurb-text">{{ info.blurb }}</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="label">Population</div>
+                <strong>{{ "{:,.0f}".format(stats.population) if stats.population is not none else "No data" }}</strong>
+            </div>
+            <div class="hero-stat">
+                <div class="label">Life expectancy</div>
+                <strong>{{ "{:.1f} yrs".format(stats.life_expectancy) if stats.life_expectancy is not none else "No data" }}</strong>
+            </div>
+            <div class="hero-stat">
+                <div class="label">IDPs (2023)</div>
+                <strong>{{ "{:,.0f}".format(stats.idps) if stats.idps is not none else "No data" }}</strong>
+            </div>
+            <div class="hero-stat">
+                <div class="label">Refugees (2023)</div>
+                <strong>{{ "{:,.0f}".format(stats.refugees) if stats.refugees is not none else "No data" }}</strong>
+            </div>
+        </div>
     </div>
 </div>
 
+<div class="map-card">
+    <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox={{ info.bbox }}&layer=mapnik"
+        loading="lazy">
+    </iframe>
+</div>
+
+<h2 class="section-title">Trends over time</h2>
 {% for chart in charts %}
+<div class="chart-card">
     {{ chart | safe }}
+</div>
 {% endfor %}
 {% endblock %}

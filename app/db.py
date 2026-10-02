@@ -87,3 +87,8 @@ def get_overview():
             "displaced": displaced,
         })
     return rows
+def get_map_data():
+    rows = get_overview()
+    for r in rows:
+        r["info"] = COUNTRY_INFO[r["code"]]
+    return rows

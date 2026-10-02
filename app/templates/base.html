@@ -7,10 +7,10 @@
 </head>
 <body>
     <nav>
-        <a class="brand" href="/">East Africa Data Platform</a>
-        <a class="link" href="/">Home</a>
-        <a class="link" href="/countries">Countries</a>
-    </nav>
+    <a class="brand" href="/">East Africa Humanitarian Data Platform</a>
+     <a class="link{% if request.path == '/' %} active{% endif %}" href="/">Home</a>
+    <a class="link{% if request.path.startswith('/countries') %} active{% endif %}" href="/countries">Countries</a>
+     </nav>
     <div class="page">
         {% block content %}{% endblock %}
     </div>
