@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Log in | East Africa Humanitarian Data{% endblock %}
+{% block content %}
+<div class="auth-card">
+    <h1>Log in</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}<p class="flash">{{ messages[0] }}</p>{% endif %}
+    {% endwith %}
+    <form method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log in</button>
+    </form>
+    <p class="auth-switch">No account? <a href="/register">Register</a></p>
+</div>
+{% endblock %}

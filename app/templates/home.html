@@ -11,7 +11,20 @@
         {{ map_html | safe }}
     </div>
 </div>
-
+{% if current_user.is_authenticated and favorite_codes %}
+<h2 class="section-title">Your favorites</h2>
+<div class="card-grid" style="margin-bottom: 36px;">
+    {% for r in rows if r.code in favorite_codes %}
+    <a class="country-card" href="/country/{{ r.code }}">
+        <div class="top-row">
+            <img src="https://flagcdn.com/w80/{{ r.info.iso2 }}.png" alt="{{ r.name }} flag">
+            <span class="name">{{ r.name }}</span>
+        </div>
+        <div class="mini-stat">Population: <strong>{{ "{:,.0f}".format(r.population) if r.population is not none else "No data" }}</strong></div>
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
 <h2 class="section-title">Browse by country</h2>
 <div class="card-grid">
     {% for r in rows %}

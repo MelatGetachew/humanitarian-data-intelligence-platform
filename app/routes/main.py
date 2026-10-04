@@ -1,7 +1,9 @@
-from flask import Blueprint, render_template, abort, request
+from flask import Blueprint, render_template, abort, request, redirect, url_for
 import plotly.express as px
 import plotly.graph_objects as go
 from app.db import get_country_data, get_overview, get_map_data, COUNTRY_NAMES, COUNTRY_INFO
+from flask_login import current_user, login_required
+from app.models.user import db, Favorite
 
 main = Blueprint("main", __name__)
 
@@ -49,7 +51,17 @@ def home():
         div_id="east-africa-map",
     )
 
-    return render_template("home.html", countries=COUNTRY_INFO, rows=rows, map_html=map_html)
+    favorite_codes = set()
+    if current_user.is_authenticated:
+        favorite_codes = {f.country_code for f in Favorite.query.filter_by(user_id=current_user.id).all()}
+
+    return render_template(
+        "home.html",
+        countries=COUNTRY_INFO,
+        rows=rows,
+        map_html=map_html,
+        favorite_codes=favorite_codes,
+    )
 
 
 @main.route("/country/<code>")
@@ -93,6 +105,11 @@ def country(code):
             yaxis=dict(showgrid=True, gridcolor="#eef0f2", title=None),
         )
         charts.append(fig.to_html(full_html=False, include_plotlyjs="cdn" if i == 0 else False))
+
+    is_favorited = False
+    if current_user.is_authenticated:
+        is_favorited = Favorite.query.filter_by(user_id=current_user.id, country_code=code).first() is not None
+
     return render_template(
         "country.html",
         code=code,
@@ -100,7 +117,31 @@ def country(code):
         info=COUNTRY_INFO[code],
         stats=stats,
         charts=charts,
+        is_favorited=is_favorited,
     )
+
+
+@main.route("/favorite/<code>", methods=["POST"])
+@login_required
+def add_favorite(code):
+    code = code.upper()
+    if code in COUNTRY_NAMES:
+        exists = Favorite.query.filter_by(user_id=current_user.id, country_code=code).first()
+        if not exists:
+            db.session.add(Favorite(user_id=current_user.id, country_code=code))
+            db.session.commit()
+    return redirect(request.referrer or url_for("main.home"))
+
+
+@main.route("/unfavorite/<code>", methods=["POST"])
+@login_required
+def remove_favorite(code):
+    code = code.upper()
+    fav = Favorite.query.filter_by(user_id=current_user.id, country_code=code).first()
+    if fav:
+        db.session.delete(fav)
+        db.session.commit()
+    return redirect(request.referrer or url_for("main.home"))
 
 
 @main.route("/countries")

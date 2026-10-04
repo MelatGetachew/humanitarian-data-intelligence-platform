@@ -10,7 +10,12 @@
     <a class="brand" href="/">East Africa Humanitarian Data Platform</a>
      <a class="link{% if request.path == '/' %} active{% endif %}" href="/">Home</a>
     <a class="link{% if request.path.startswith('/countries') %} active{% endif %}" href="/countries">Countries</a>
-     </nav>
+    {% if current_user.is_authenticated %}
+        <a class="link" href="/logout">Log out ({{ current_user.email }})</a>
+    {% else %}
+        <a class="link" href="/login">Log in</a>
+        <a class="link" href="/register">Register</a>
+    {% endif %} </nav>
     <div class="page">
         {% block content %}{% endblock %}
     </div>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Register | East Africa Humanitarian Data{% endblock %}
+{% block content %}
+<div class="auth-card">
+    <h1>Create an account</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}<p class="flash">{{ messages[0] }}</p>{% endif %}
+    {% endwith %}
+    <form method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required minlength="6">
+        <button type="submit">Register</button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="/login">Log in</a></p>
+</div>
+{% endblock %}

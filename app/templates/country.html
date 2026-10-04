@@ -9,6 +9,13 @@
             <img class="flag-badge" src="https://flagcdn.com/w40/{{ info.iso2 }}.png" alt="{{ name }} flag">
             <h1>{{ name }}</h1>
         </div>
+                {% if current_user.is_authenticated %}
+            <form method="post" action="{{ '/unfavorite/' if is_favorited else '/favorite/' }}{{ code }}" style="margin-top: 16px;">
+                <button type="submit" class="fav-button {{ 'active' if is_favorited }}">
+                    {{ "★ Saved to favorites" if is_favorited else "☆ Save to favorites" }}
+                </button>
+            </form>
+        {% endif %}
         <p class="blurb-text">{{ info.blurb }}</p>
         <div class="hero-stats">
             <div class="hero-stat">
