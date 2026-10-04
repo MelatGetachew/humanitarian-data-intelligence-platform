@@ -1,5 +1,9 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def load_master_dataset():
     # Read the cleaned, merged CSV
@@ -22,8 +26,7 @@ def load_master_dataset():
     
     # Connect to PostgreSQL
     # Format: postgresql://username:password@host:port/database_name
-    engine = create_engine("postgresql://postgres:eastafrica2024@localhost:5432/humanitarian_data")
-    
+    engine = create_engine(os.environ.get("DATABASE_URL"))
     # Load into the table, replacing existing data each time this runs
     df.to_sql("country_indicators", engine, if_exists="replace", index=False)
     
