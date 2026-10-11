@@ -1,8 +1,11 @@
+import os
 import pandas as pd
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
-engine = create_engine("postgresql://postgres:eastafrica2024@localhost:5432/humanitarian_data")
+load_dotenv()
 
+engine = create_engine(os.environ.get("DATABASE_URL"))
 COUNTRY_INFO = {
     "ETH": {
         "name": "Ethiopia", "iso2": "et",
