@@ -9,32 +9,30 @@
             <img class="flag-badge" src="https://flagcdn.com/w40/{{ info.iso2 }}.png" alt="{{ name }} flag">
             <h1>{{ name }}</h1>
         </div>
-                {% if current_user.is_authenticated %}
+        <p class="blurb-text">{{ info.blurb }}</p>
+
+        <div class="hero-stats">
+            {% for c in cards %}
+            <div class="hero-stat">
+                <div class="label">{{ c.label }}</div>
+                {% if c.value %}
+                    <strong>{{ c.value }}</strong>
+                    <div class="ref">{{ c.year }} | {{ c.source }}</div>
+                    {% if c.detail %}<div class="ref">{{ c.detail }}</div>{% endif %}
+                {% else %}
+                    <strong class="na">Data not available</strong>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if current_user.is_authenticated %}
             <form method="post" action="{{ '/unfavorite/' if is_favorited else '/favorite/' }}{{ code }}" style="margin-top: 16px;">
                 <button type="submit" class="fav-button {{ 'active' if is_favorited }}">
                     {{ "★ Saved to favorites" if is_favorited else "☆ Save to favorites" }}
                 </button>
             </form>
         {% endif %}
-        <p class="blurb-text">{{ info.blurb }}</p>
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <div class="label">Population</div>
-                <strong>{{ "{:,.0f}".format(stats.population) if stats.population is not none else "No data" }}</strong>
-            </div>
-            <div class="hero-stat">
-                <div class="label">Life expectancy</div>
-                <strong>{{ "{:.1f} yrs".format(stats.life_expectancy) if stats.life_expectancy is not none else "No data" }}</strong>
-            </div>
-            <div class="hero-stat">
-                <div class="label">IDPs (2023)</div>
-                <strong>{{ "{:,.0f}".format(stats.idps) if stats.idps is not none else "No data" }}</strong>
-            </div>
-            <div class="hero-stat">
-                <div class="label">Refugees (2023)</div>
-                <strong>{{ "{:,.0f}".format(stats.refugees) if stats.refugees is not none else "No data" }}</strong>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -49,7 +47,8 @@
 <div class="chart-grid">
 {% for chart in charts %}
     <div class="chart-card">
-        {{ chart | safe }}
+        {{ chart.html | safe }}
+        <p class="chart-source">Source: {{ chart.source }} | Years shown: {{ chart.years }}</p>
     </div>
 {% endfor %}
 </div>

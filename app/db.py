@@ -64,32 +64,82 @@ COUNTRY_NAMES = {code: info["name"] for code, info in COUNTRY_INFO.items()}
 def get_country_data(code):
     query = text("SELECT * FROM country_indicators WHERE country_code = :code ORDER BY year")
     return pd.read_sql(query, engine, params={"code": code})
+INDICATOR_META = {
+    "population": {
+        "label": "Population",
+        "fmt": "{:,.0f}",
+        "source": "World Bank, World Development Indicators",
+    },
+    "life_expectancy": {
+        "label": "Life expectancy at birth",
+        "fmt": "{:.1f} years",
+        "source": "World Bank, World Development Indicators",
+    },
+    "school_enrollment": {
+        "label": "Primary school gross enrolment rate",
+        "fmt": "{:.1f}%",
+        "source": "World Bank, World Development Indicators",
+    },
+    "displaced": {
+        "label": "Total displaced population (IDPs and refugees)",
+        "fmt": "{:,.0f}",
+        "source": "UNHCR Population Statistics",
+    },
+    "idps": {
+        "label": "Internally displaced persons (IDPs)",
+        "fmt": "{:,.0f}",
+        "source": "UNHCR Population Statistics",
+    },
+    "refugees": {
+        "label": "Refugees",
+        "fmt": "{:,.0f}",
+        "source": "UNHCR Population Statistics",
+    },
+}
+
+DB_COLUMNS = ["population", "life_expectancy", "school_enrollment", "idps", "refugees"]
+
+
+def summarize(df):
+    """Latest value and its reference year for each indicator in one country's data."""
+    def latest(col):
+        r = df.dropna(subset=[col])
+        if r.empty:
+            return {"value": None, "year": None}
+        return {"value": r.iloc[-1][col], "year": int(r.iloc[-1]["year"])}
+
+    s = {col: latest(col) for col in DB_COLUMNS}
+
+    refugees, idps = s["refugees"], s["idps"]
+    if refugees["value"] is None and idps["value"] is None:
+        s["displaced"] = {"value": None, "year": None}
+    else:
+        s["displaced"] = {
+            "value": (refugees["value"] or 0) + (idps["value"] or 0),
+            "year": max(y for y in (refugees["year"], idps["year"]) if y),
+        }
+    return s
+
+
 def get_overview():
     df = pd.read_sql("SELECT * FROM country_indicators ORDER BY year", engine)
     rows = []
     for code, name in COUNTRY_NAMES.items():
-        c = df[df["country_code"] == code]
-
-        def latest(col):
-            r = c.dropna(subset=[col])
-            return r.iloc[-1][col] if not r.empty else None
-
-        refugees = latest("refugees")
-        idps = latest("idps")
-        if refugees is None and idps is None:
-            displaced = None
-        else:
-            displaced = (refugees or 0) + (idps or 0)
-
-        rows.append({
-            "code": code,
-            "name": name,
-            "population": latest("population"),
-            "life_expectancy": latest("life_expectancy"),
-            "school_enrollment": latest("school_enrollment"),
-            "displaced": displaced,
-        })
+        s = summarize(df[df["country_code"] == code])
+        row = {"code": code, "name": name}
+        for key, item in s.items():
+            row[key] = item["value"]
+            row[key + "_year"] = item["year"]
+        rows.append(row)
     return rows
+
+
+def get_map_data():
+    rows = get_overview()
+    for r in rows:
+        r["info"] = COUNTRY_INFO[r["code"]]
+    return rows
+
 def get_map_data():
     rows = get_overview()
     for r in rows:

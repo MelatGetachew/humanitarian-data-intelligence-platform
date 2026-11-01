@@ -555,3 +555,43 @@ nav a.link.active::after {
 }
 
 .fav-button:hover { opacity: 0.9; }
+.ref-year { color: var(--text-muted); font-size: 0.8rem; margin-left: 2px; }
+.na { color: var(--text-muted); font-weight: 500; }
+
+.hero-stat .ref {
+    color: #9fb8cc;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+.hero-stat strong.na { font-size: 1rem; color: #cfe0f0; }
+
+.chart-source {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 4px 12px 10px;
+}
+
+.source-note {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 14px 4px 28px;
+    max-width: 900px;
+}
+
+.site-footer {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    padding: 22px 0;
+}
+.site-footer-inner {
+    max-width: var(--container, 1140px);
+    margin: 0 auto;
+    padding: 0 var(--gutter, 24px);
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.55;
+}
+.site-footer-inner p { margin: 0; }

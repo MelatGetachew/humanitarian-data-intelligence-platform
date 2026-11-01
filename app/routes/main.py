@@ -1,11 +1,20 @@
 from flask import Blueprint, render_template, abort, request, redirect, url_for
 import plotly.express as px
 import plotly.graph_objects as go
-from app.db import get_country_data, get_overview, get_map_data, COUNTRY_NAMES, COUNTRY_INFO
+from app.db import (
+    get_country_data, get_overview, get_map_data, summarize,
+    INDICATOR_META, COUNTRY_NAMES, COUNTRY_INFO,
+)
 from flask_login import current_user, login_required
 from app.models.user import db, Favorite
 
 main = Blueprint("main", __name__)
+
+
+def hover_line(label, value, year, fmt):
+    if value is None:
+        return f"{label}: Data not available"
+    return f"{label} ({year}): {fmt.format(value)}"
 
 
 @main.route("/")
@@ -17,11 +26,11 @@ def home():
 
     hover_text = []
     for r in rows:
-        pop = f"{r['population']:,.0f}" if r["population"] is not None else "No data"
-        life = f"{r['life_expectancy']:.1f} yrs" if r["life_expectancy"] is not None else "No data"
-        disp = f"{r['displaced']:,.0f}" if r["displaced"] is not None else "No data"
         hover_text.append(
-            f"<b>{r['name']}</b><br>Population: {pop}<br>Life expectancy: {life}<br>Displaced: {disp}"
+            f"<b>{r['name']}</b><br>"
+            + hover_line("Population", r["population"], r["population_year"], "{:,.0f}") + "<br>"
+            + hover_line("Life expectancy", r["life_expectancy"], r["life_expectancy_year"], "{:.1f} years") + "<br>"
+            + hover_line("Total displaced", r["displaced"], r["displaced_year"], "{:,.0f}")
         )
 
     fig = go.Figure(go.Choropleth(
@@ -35,20 +44,10 @@ def home():
         marker_line_color="white",
         colorbar_title="Population",
     ))
-    fig.update_geos(
-        scope="africa",
-        fitbounds="locations",
-        visible=False,
-    )
-    fig.update_layout(
-        margin=dict(l=0, r=0, t=0, b=0),
-    )
+    fig.update_geos(scope="africa", fitbounds="locations", visible=False)
+    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
 
-    map_html = fig.to_html(
-        full_html=False,
-        include_plotlyjs="cdn",
-        div_id="east-africa-map",
-    )
+    map_html = fig.to_html(full_html=False, include_plotlyjs="cdn", div_id="east-africa-map")
 
     favorite_codes = set()
     if current_user.is_authenticated:
@@ -70,24 +69,32 @@ def country(code):
         abort(404)
 
     df = get_country_data(code)
+    stats = summarize(df)
 
-    def latest(column):
-        rows = df.dropna(subset=[column])
-        return rows.iloc[-1][column] if not rows.empty else None
+    def fmt_or_na(key):
+        v = stats[key]["value"]
+        return INDICATOR_META[key]["fmt"].format(v) if v is not None else "data not available"
 
-    stats = {
-        "population": latest("population"),
-        "life_expectancy": latest("life_expectancy"),
-        "school_enrollment": latest("school_enrollment"),
-        "idps": latest("idps"),
-        "refugees": latest("refugees"),
-    }
+    cards = []
+    for key in ["population", "life_expectancy", "school_enrollment", "displaced"]:
+        meta = INDICATOR_META[key]
+        item = stats[key]
+        card = {
+            "label": meta["label"],
+            "value": meta["fmt"].format(item["value"]) if item["value"] is not None else None,
+            "year": item["year"],
+            "source": meta["source"],
+            "detail": None,
+        }
+        if key == "displaced" and item["value"] is not None:
+            card["detail"] = f"IDPs: {fmt_or_na('idps')} | Refugees: {fmt_or_na('refugees')}"
+        cards.append(card)
 
     charts = []
     chart_specs = [
         ("population", "Population"),
-        ("life_expectancy", "Life Expectancy (years)"),
-        ("school_enrollment", "Primary School Enrollment (% gross)"),
+        ("life_expectancy", "Life expectancy at birth (years)"),
+        ("school_enrollment", "Primary school gross enrolment rate (%)"),
     ]
     for i, (column, title) in enumerate(chart_specs):
         data = df.dropna(subset=[column])
@@ -103,7 +110,15 @@ def country(code):
             xaxis=dict(showgrid=False, title=None),
             yaxis=dict(showgrid=True, gridcolor="#eef0f2", title=None),
         )
-        charts.append(fig.to_html(full_html=False, include_plotlyjs="cdn" if i == 0 else False))
+        years = (
+            f"{int(data['year'].min())} to {int(data['year'].max())}"
+            if not data.empty else "Data not available"
+        )
+        charts.append({
+            "html": fig.to_html(full_html=False, include_plotlyjs="cdn" if i == 0 else False),
+            "source": INDICATOR_META[column]["source"],
+            "years": years,
+        })
 
     is_favorited = False
     if current_user.is_authenticated:
@@ -114,7 +129,7 @@ def country(code):
         code=code,
         name=COUNTRY_NAMES[code],
         info=COUNTRY_INFO[code],
-        stats=stats,
+        cards=cards,
         charts=charts,
         is_favorited=is_favorited,
     )

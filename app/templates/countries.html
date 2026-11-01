@@ -3,6 +3,14 @@
 {% block title %}Countries | East Africa Humanitarian Data{% endblock %}
 
 {% block content %}
+{% macro cell(value, year, fmt) -%}
+    {%- if value is not none -%}
+        {{ fmt.format(value) }} <span class="ref-year">({{ year }})</span>
+    {%- else -%}
+        <span class="na">Data not available</span>
+    {%- endif -%}
+{%- endmacro %}
+
 <div class="hero" style="margin-bottom: 28px; padding: 40px 24px;">
     <h1 style="font-size: 2rem;">Compare Countries</h1>
     <p>Search and sort across all 10 countries in the dataset.</p>
@@ -14,9 +22,9 @@
         <select name="sort">
             <option value="name" {{ "selected" if sort == "name" }}>Sort: Name</option>
             <option value="population" {{ "selected" if sort == "population" }}>Sort: Population</option>
-            <option value="life_expectancy" {{ "selected" if sort == "life_expectancy" }}>Sort: Life expectancy</option>
-            <option value="school_enrollment" {{ "selected" if sort == "school_enrollment" }}>Sort: School enrollment</option>
-            <option value="displaced" {{ "selected" if sort == "displaced" }}>Sort: Displaced people</option>
+            <option value="life_expectancy" {{ "selected" if sort == "life_expectancy" }}>Sort: Life expectancy at birth</option>
+            <option value="school_enrollment" {{ "selected" if sort == "school_enrollment" }}>Sort: Primary school gross enrolment rate</option>
+            <option value="displaced" {{ "selected" if sort == "displaced" }}>Sort: Total displaced population</option>
         </select>
         <button type="submit">Apply</button>
     </form>
@@ -27,21 +35,25 @@
         <tr>
             <th>Country</th>
             <th>Population</th>
-            <th>Life expectancy</th>
-            <th>School enrollment</th>
-            <th>Displaced (2023)</th>
+            <th>Life expectancy at birth</th>
+            <th>Primary school gross enrolment rate</th>
+            <th>Total displaced population (IDPs and refugees)</th>
         </tr>
         {% for r in rows %}
         <tr>
             <td><a href="/country/{{ r.code }}">{{ r.name }}</a></td>
-            <td>{{ "{:,.0f}".format(r.population) if r.population is not none else "No data" }}</td>
-            <td>{{ "{:.1f} yrs".format(r.life_expectancy) if r.life_expectancy is not none else "No data" }}</td>
-            <td>{{ "{:.1f}%".format(r.school_enrollment) if r.school_enrollment is not none else "No data" }}</td>
-            <td>{{ "{:,.0f}".format(r.displaced) if r.displaced is not none else "No data" }}</td>
+            <td>{{ cell(r.population, r.population_year, "{:,.0f}") }}</td>
+            <td>{{ cell(r.life_expectancy, r.life_expectancy_year, "{:.1f} years") }}</td>
+            <td>{{ cell(r.school_enrollment, r.school_enrollment_year, "{:.1f}%") }}</td>
+            <td>{{ cell(r.displaced, r.displaced_year, "{:,.0f}") }}</td>
         </tr>
         {% else %}
         <tr><td colspan="5">No countries match your search.</td></tr>
         {% endfor %}
     </table>
 </div>
+
+<p class="source-note">
+    Sources: World Bank, World Development Indicators (population, life expectancy, school enrolment); UNHCR Population Statistics (displacement). The year in brackets is the latest year available for each indicator. Gross enrolment rates can exceed 100% because they include students who are older or younger than the official age for that level.
+</p>
 {% endblock %}

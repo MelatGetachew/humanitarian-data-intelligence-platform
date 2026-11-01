@@ -8,17 +8,23 @@
 </head>
 <body>
     <nav>
-    <a class="brand" href="/">East Africa Humanitarian Data Platform</a>
-     <a class="link{% if request.path == '/' %} active{% endif %}" href="/">Home</a>
-    <a class="link{% if request.path.startswith('/countries') %} active{% endif %}" href="/countries">Countries</a>
-    {% if current_user.is_authenticated %}
-       <a class="link" href="/logout">Log out <span class="nav-email">({{ current_user.email }})</span></a>
-    {% else %}
-        <a class="link" href="/login">Log in</a>
-        <a class="link" href="/register">Register</a>
-    {% endif %} </nav>
+        <a class="brand" href="/">East Africa Data Platform</a>
+        <a class="link{% if request.path == '/' %} active{% endif %}" href="/">Home</a>
+        <a class="link{% if request.path.startswith('/countries') %} active{% endif %}" href="/countries">Countries</a>
+        {% if current_user.is_authenticated %}
+            <a class="link" href="/logout">Log out <span class="nav-email">({{ current_user.email }})</span></a>
+        {% else %}
+            <a class="link" href="/login">Log in</a>
+            <a class="link" href="/register">Register</a>
+        {% endif %}
+    </nav>
     <div class="page">
         {% block content %}{% endblock %}
     </div>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p><strong>Data sources:</strong> World Bank, World Development Indicators (population, life expectancy at birth, primary school gross enrolment rate); UNHCR Population Statistics (refugees and internally displaced persons). The year shown beside each figure is the latest year available for that indicator, and it can differ between countries.</p>
+        </div>
+    </footer>
 </body>
 </html>
