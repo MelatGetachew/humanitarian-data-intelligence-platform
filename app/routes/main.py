@@ -42,7 +42,6 @@ def home():
     )
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
-        height=420,
     )
 
     map_html = fig.to_html(

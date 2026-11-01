@@ -1,6 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 * { box-sizing: border-box; }
+
+/* ===== Responsive layout ===== */
+:root {
+    --container: 1440px;
+    --gutter: clamp(16px, 4vw, 48px);
+}
+
+html { font-size: clamp(15px, 0.35vw + 11px, 18px); }
+
+body { overflow-x: hidden; }
+
+nav {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+    padding-right: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+    flex-wrap: wrap;
+    gap: 10px 24px;
+}
+
+.page {
+    max-width: var(--container);
+    padding: 0 var(--gutter) 70px;
+}
+
+/* Banners stretch edge to edge */
+.hero {
+    margin: 0 calc(50% - 50vw) 36px;
+    padding: 64px var(--gutter) 56px;
+}
+.hero h1 { font-size: clamp(1.8rem, 3vw + 0.6rem, 2.8rem); }
+
+.country-hero {
+    margin: 0 calc(50% - 50vw);
+    padding: 36px 0 72px;
+}
+.country-hero-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
+.country-hero h1 { font-size: clamp(1.6rem, 2.4vw + 0.5rem, 2.4rem); }
+
+/* Maps grow with the window */
+.map-section {
+    max-width: none;
+    margin: -70px 0 48px;
+}
+.map-frame { height: clamp(380px, 62vh, 680px); }
+
+.map-card {
+    max-width: none;
+    margin: -40px 0 40px;
+}
+.map-card iframe { height: clamp(260px, 42vh, 480px); }
+
+/* Charts sit side by side when there is room */
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+    gap: 20px;
+}
+.chart-grid .chart-card { margin-bottom: 0; min-width: 0; }
+
+/* Table scrolls sideways on small screens */
+.table-card { overflow-x: auto; }
+.table-card table { min-width: 640px; }
+
+@media (max-width: 640px) {
+    .nav-email { display: none; }
+    .country-hero .title-row { flex-wrap: wrap; }
+    .filter-bar input[type="text"],
+    .filter-bar select,
+    .filter-bar button { width: 100%; }
+}
+
 :root {
     --navy-dark: #0d1b2a;
     --navy: #1b3a5c;
